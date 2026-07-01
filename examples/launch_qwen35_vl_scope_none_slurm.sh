@@ -37,6 +37,7 @@ overrides=(
   "policy.generation.mcore_generation_config.cuda_graph_impl=none"
   "policy.generation.mcore_generation_config.inference_cuda_graph_scope=none"
   "policy.megatron_cfg.context_parallel_size=${CONTEXT_PARALLEL_SIZE}"
+  "+policy.megatron_cfg.inference_moe_token_dispatcher_type=nccl"
   "policy.sequence_packing.enabled=true"
   "policy.make_sequence_length_divisible_by=${MAKE_SEQUENCE_LENGTH_DIVISIBLE_BY}"
   "logger.log_dir=${BASE_LOG_DIR}/nemo_logs"
